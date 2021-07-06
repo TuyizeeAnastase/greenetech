@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/greenetech/static/css/main.ae4e689d.chunk.css",
+    "main.js": "/greenetech/static/js/main.597f485d.chunk.js",
+    "main.js.map": "/greenetech/static/js/main.597f485d.chunk.js.map",
+    "runtime-main.js": "/greenetech/static/js/runtime-main.a0113f98.js",
+    "runtime-main.js.map": "/greenetech/static/js/runtime-main.a0113f98.js.map",
+    "static/js/2.aa7b8368.chunk.js": "/greenetech/static/js/2.aa7b8368.chunk.js",
+    "static/js/2.aa7b8368.chunk.js.map": "/greenetech/static/js/2.aa7b8368.chunk.js.map",
+    "static/js/3.68c523a4.chunk.js": "/greenetech/static/js/3.68c523a4.chunk.js",
+    "static/js/3.68c523a4.chunk.js.map": "/greenetech/static/js/3.68c523a4.chunk.js.map",
+    "index.html": "/greenetech/index.html",
+    "static/css/main.ae4e689d.chunk.css.map": "/greenetech/static/css/main.ae4e689d.chunk.css.map",
+    "static/js/2.aa7b8368.chunk.js.LICENSE.txt": "/greenetech/static/js/2.aa7b8368.chunk.js.LICENSE.txt",
+    "static/media/bodyG.3a42f9a5.png": "/greenetech/static/media/bodyG.3a42f9a5.png",
+    "static/media/profile.f5ed3732.jpg": "/greenetech/static/media/profile.f5ed3732.jpg",
+    "static/media/service.df76da86.jpg": "/greenetech/static/media/service.df76da86.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0113f98.js",
+    "static/js/2.aa7b8368.chunk.js",
+    "static/css/main.ae4e689d.chunk.css",
+    "static/js/main.597f485d.chunk.js"
+  ]
+}

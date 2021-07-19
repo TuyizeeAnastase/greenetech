@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.line hr{
+  height: 2px;
+  width: 60px;
+  border: 0;
+  background: #34D399;
+}
+.line2 hr{
+  height: 2px;
+  width: 60px;
+  border: 0;
+  background: #123e91;
+}
+.lineT hr{
+  height: 2px;
+  width: 60px;
+  border: 0;
+  background: #123e91;
+}
+.line3 hr{
+  height: 2px;
+  width: 30px;
+  border: 0;
+  background: #e9ebee;
+}
+.footer hr{
+  height: 2px;
+  width: 30px;
+  border: 0;
+  background: black;
+}
+.fLine hr{
+  height: 2px;
+  width: 75%;
+  border: 0;
+  background: black; 
+}
+.service{
+  background-image: '../images/service.jpg';
+}
+.logo{
+  font-size: 35px;
+  font-size: 600;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.navbar.sticky{
+  height: 120px;
+  padding: 2px 0;
+  background-color: #123e91;
+}
+.navbar.sticky .menu a:hover{
+  color: #e9ebee;
+  font-size: 400;
+  transition: all 0.3 ease;
+}
+
+@media(max-width:1300px) {
+  .project-s{
+    display: inline-block;
+    text-align: center;
+}
+}
+@media(max-width:1104px){
+  .project-s{
+    display: inline-block;
+    text-align: center;
+}
+}
+@media(max-width:991px){
+  .project-s{
+    display: inline-block;
+    text-align: center;
+}
+}
+@media(max-width:947px){
+  .project-s{
+    display: inline-block;
+    text-align: center;
+}
+}
+@media(max-width:690px){
+  .project-s{
+      display: inline-block;
+      text-align: center;
+  }
+  .pr_card img{
+    width: 200px;
+    height: 150px;
+  }
+  .about{
+    display: inline-block;
+  }
+  .contact{
+    display: inline-block;
+    width: 100%;
+  }
+  .footer{
+    display: inline-block;
+  }
+  .services{
+    display: inline-block;
+  }
+  .services_1{
+    display: flex;
+    float: left;
+  }
+  .navbar .menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -0;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3 ease;
+  }
+  .navbar .menu.active{
+    left: 0;
+  }
+  .navbar .menu a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+}

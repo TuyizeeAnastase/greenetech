@@ -1,0 +1,62 @@
+{
+  "name": "greentech",
+  "homepage": "http://TuyizeeAnastase.github.io/greenetech",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.1.2",
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/data-grid": "^4.0.0-alpha.33",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "chart": "^0.1.2",
+    "jquery": "^3.6.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.3",
+    "react-copyright": "0.0.1",
+    "react-dom": "^17.0.2",
+    "react-jvectormap": "0.0.16",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "recharts": "^2.0.9",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "dev": "craco  start",
+    "start": "craco index.js",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "customize-cra": "^1.0.0",
+    "gh-pages": "^3.2.3",
+    "postcss": "^7.0.36",
+    "react-app-rewired": "^2.1.8",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.2"
+  }
+}

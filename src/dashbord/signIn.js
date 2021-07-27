@@ -2,6 +2,7 @@ import React from 'react';
 import fb from '.././images/facebook.png';
 import twitter from '.././images/twitter.png';
 import instagram from '.././images/instagram.png';
+import { Link } from 'react-router-dom';  
 
 const Login = () => {
     const handleFormSubmit = (e) => {
@@ -55,11 +56,14 @@ const Login = () => {
                     </div>
 
                     <div className='flex justify-center items-center mt-6'>
-                        <button
+                       <Link to="/dashbord">
+                       <button
                             className={`bg-green-700 py-2 px-4 text-sm text-white rounded border border-green focus:outline-none focus:border-green-dark`}
                         >
                             Login
                         </button>
+                         
+                       </Link>
                     </div>
                 </form>
             </div>

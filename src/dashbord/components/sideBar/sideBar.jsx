@@ -1,6 +1,6 @@
 import React from 'react';
-import './sideBar.css'
-import { LineStyle, Timeline,PermIdentity, DynamicFeed,ChatBubble, TrendingUp,MonetizationOn,Equalizer,Storefront,MailOutline} from '@material-ui/icons';
+import './sideBar.css';
+import { LineStyle, PermIdentity, DynamicFeed,ChatBubble,MonetizationOn,Equalizer,Storefront,MailOutline} from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 
 export default function SideBar() {
@@ -16,14 +16,18 @@ export default function SideBar() {
                             Home
                         </li>
                         </Link>
+                        <Link to="/dashbord/products">
                         <li className="sidebarlistItems">
-                            <Timeline className="sidebarIcon"/>
-                            Analytics
+                            <Storefront className="sidebarIcon"/>
+                            Products
                         </li>
-                        <li className="sidebarlistItems">
-                            <TrendingUp className="sidebarIcon"/>
-                            Sales
+                        </Link>
+                    <Link to="/dashbord/users">
+                         <li className="sidebarlistItems">
+                            <PermIdentity className="sidebarIcon"/>
+                            Users
                         </li>
+                    </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
@@ -47,27 +51,16 @@ export default function SideBar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                    <Link to="/dashbord/users">
-                         <li className="sidebarlistItems">
-                            <PermIdentity className="sidebarIcon"/>
-                            Users
-                        </li>
-                    </Link>
-                    <Link to="/dashbord/transactions">
-                    <li className="sidebarlistItems ">
+                    <Link to="/dashbord/subscribers">
+                       <li className="sidebarlistItems ">
                             <MonetizationOn className="sidebarIcon"/>
-                            Transactions
+                            Subscribers
                         </li>
                     </Link>
-                        
+                        <Link to="/dashbord/admin">
                         <li className="sidebarlistItems">
                             <Equalizer className="sidebarIcon"/>
-                              Reports
-                        </li>
-                        <Link to="/dashbord/products">
-                        <li className="sidebarlistItems">
-                            <Storefront className="sidebarIcon"/>
-                            Products
+                              Admins
                         </li>
                         </Link>
                     </ul>

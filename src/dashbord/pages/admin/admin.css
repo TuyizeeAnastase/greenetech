@@ -1,18 +1,23 @@
-.transactions{
+.adminList{
     flex: 4;
 }
-.productListItem{
+.adminListItem{
     display: flex;
     align-items: center;
 }
-.productListIm{
+.adminListAdmin{
+    display: flex;
+    flex-direction: row;
+}
+.adminListIm{
     height: 32px;
     width: 32px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    margin-top: 8px;
 }
-.productListEdit{
+.adminListEdit{
     border:none;
     border-radius: 10px;
     padding: 5px 10px;
@@ -20,12 +25,7 @@
     cursor: pointer;
     margin-right: 20px; 
 }
-.productListDelete{
+.adminListDelete{
     color: brown;
     cursor: pointer;
-}
-@media(max-width:690px){
-    .stock{
-        width: 20px;
-    }
 }

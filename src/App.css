@@ -121,6 +121,9 @@
 }
 }
 @media(max-width:690px){
+  .home{
+    margin-left: 2px;
+  }
   .project-s{
       display: inline-block;
       text-align: center;
@@ -131,6 +134,13 @@
   }
   .about{
     display: inline-block;
+  }
+  .target{
+    display: inline-block;
+    text-align: left;
+  }
+  .about_content{
+     font-size: 5px;
   }
   .contact{
     display: inline-block;

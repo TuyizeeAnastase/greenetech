@@ -9,6 +9,10 @@ import Newuser from './pages/newUser/Newuser';
 import Products from './pages/products/Products';
 import Product from './pages/product/Product';
 import NewProduct from './pages/newProduct/NewProduct';
+import Subscribers from './pages/subscribers/Subscribers';
+import Admin from './pages/admin/Admin';
+import EditAdmin from './pages/editAdmin/EditAdmin';
+import NewAdmin from './pages/newAdmin/NewAdmin';
 
 import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
 
@@ -37,8 +41,20 @@ function Dashbord(){
                         <Route path="/dashbord/product/:productId">
                            <Product/>
                         </Route>
-                        <Route path="/dashbord/:newProd">
+                        <Route path="/dashbord/newProduct">
                            <NewProduct/>
+                        </Route>
+                        <Route path="/dashbord/subscribers">
+                           <Subscribers/>
+                        </Route>
+                        <Route path="/dashbord/admin">
+                           <Admin/>
+                        </Route>
+                        <Route path="/dashbord/admin/:adminId">
+                           <EditAdmin/>
+                        </Route>
+                        <Route path="/dashbord/newAdmin">
+                           <NewAdmin/>
                         </Route>
                     </Switch>
                 </div>

@@ -54,3 +54,9 @@ border-radius: 10px;
 .widgetLgBtn.good{
     background-color: #008000;
 }
+@media(max-width:690px){
+    .widgetL{
+        display: inline-block;
+        margin-top: 2px;
+    }
+}

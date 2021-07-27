@@ -11,8 +11,8 @@
     /* background-color: #008000; */
     /* color: #fff; */
     cursor: pointer;
-    box-shadow: 10px 10px 78px 18px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 78px 18px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 78px 18px rgba(218, 214, 214, 0.75);
+-webkit-box-shadow: 10px 10px 78px 18px rgba(236, 229, 229, 0.75);
 -moz-box-shadow: 10px 10px 78px 18px rgba(0,0,0,0.75);
     
 }
@@ -45,4 +45,12 @@
 .featuredSub{
     color: gray;
     font-size: 20px;
+}
+@media(max-width:690px){
+    .featured{
+        display: inline-block;
+        width: 75%;
+        padding: 2px;
+        box-shadow: ;
+    }
 }

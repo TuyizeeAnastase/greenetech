@@ -24,7 +24,7 @@ export default function Products() {
         </div>
         )
     }},
-    { field: 'stock', headerName: 'Stock', width: 150 },
+    { field: 'stock', headerName: 'Stock', width: 150,class:'stock' },
     {
       field: 'status',
       headerName: 'Status',

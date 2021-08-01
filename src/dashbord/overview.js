@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import './overview.css'
 import TopBar from './components/topBar/topBar';
 import SideBar from './components/sideBar/sideBar';
@@ -10,9 +10,9 @@ import Products from './pages/products/Products';
 import Product from './pages/product/Product';
 import NewProduct from './pages/newProduct/NewProduct';
 import Subscribers from './pages/subscribers/Subscribers';
+import Admins from './pages/admins/Admins';
 import Admin from './pages/admin/Admin';
-import EditAdmin from './pages/editAdmin/EditAdmin';
-import NewAdmin from './pages/newAdmin/NewAdmin';
+import NewAdmin from './pages/createAdmin/createAdmin';
 
 import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
 
@@ -47,11 +47,11 @@ function Dashbord(){
                         <Route path="/dashbord/subscribers">
                            <Subscribers/>
                         </Route>
-                        <Route path="/dashbord/admin">
-                           <Admin/>
+                        <Route path="/dashbord/admins">
+                           <Admins/>
                         </Route>
                         <Route path="/dashbord/admin/:adminId">
-                           <EditAdmin/>
+                           <Admin/>
                         </Route>
                         <Route path="/dashbord/newAdmin">
                            <NewAdmin/>

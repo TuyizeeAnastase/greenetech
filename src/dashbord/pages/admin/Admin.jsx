@@ -1,54 +1,57 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './admin.css';
-import { DataGrid } from '@material-ui/data-grid';
-import { DeleteOutline } from '@material-ui/icons';
-import { admins } from '../../../dummyData';
-import { Link } from 'react-router-dom';
+import { Link } from     'react-router-dom';
+import { Publish } from '@material-ui/icons';
 
-export  default function Admin(){
-
-    const [data, setData] = useState(admins);
-
-    const handleDelete=(id)=>{
-           setData(data.filter((item)=> item.id !== id ));
-    }
-
-    const columns = [
-        { field: 'id', headerName: 'ID', width: 70 },
-        { field: 'user', headerName: 'User Admins', width: 150 , renderCell:(params)=>{
-            return (
-            <div className="adminListAdmin">
-                <img className="adminListIm" src={params.row.avatar} alt=""/>
-                {params.row.username}
+export default function EditAdmin(){
+    return(
+        <div className="admin">
+            <div className="adminTitleContainer">
+                <h1 className="admnTitle">Edit Admin</h1>
+                <Link to="/dashbord/newAdmin">
+                  <button className="adminAddButton">Create</button>
+                </Link>
             </div>
-            )
-        }},
-        { field: 'email', headerName: 'Email', width: 150 },
-          {
-            field: 'action',
-            headerName: 'Action',
-            width: 150,
-            renderCell:(params)=>{
-                return (
-                    <>
-                    <Link to={"/dashbord/admin/"+params.row.id}>
-                      <button className="adminListEdit">Edit</button>
-                    </Link>
-                    <DeleteOutline className="adminListDelete" onClick={()=>handleDelete(params.row.id)}/>
-                    </>
-                )
-            }
-          }
-      ];
-
-    return (
-        <div className="adminList">
-            <DataGrid 
-            rows={data} 
-            disableSelectionOnClick 
-            columns={columns} 
-            pageSize={8} 
-            checkboxSelection />
+            <div className="adminContainer">
+                <div className="adminShow">
+                    <div className="adminShowTop">
+                    <img src="https://images.pexels.com/photos/6325060/pexels-photo-6325060.jpeg?cs=srgb&dl=pexels-igor-6325060.jpg&fm=jpg" alt="" className="adminShowImg" />
+                    <div className="adminShowTitle">
+                        <span className="adminShowUsername">Marc Manzi</span>
+                        <span className="adminShowEmail">marc@gmail.com</span>
+                    </div>
+                    </div>
+                </div>
+                <div className="adminUpdate">
+                    <span className="adminUpdateTitle">Edit</span>
+                    <form action="" className="adminUpdateForm">
+                        <div className="adminUpdateLeft">
+                            <div className="adminUpdateItem">
+                                <label >Username</label>
+                                <input type="text" className="adminUpdateInput" placeholder="Marc3"/>
+                            </div>
+                            <div className="adminUpdateItem">
+                                <label>Email</label>
+                                <input type="text" className="adminUpdateInput" placeholder="marc@gmail.com"/>
+                            </div>
+                            <div className="adminUpdateItem">
+                                <label>Password</label>
+                                <input type="password" className="adminUpdateInput" placeholder="........"/>
+                            </div>
+                        </div>
+                        <div className="adminUpdateRight">
+                            <div className="adminUpdateUpload">
+                            <img src="https://images.pexels.com/photos/6325060/pexels-photo-6325060.jpeg?cs=srgb&dl=pexels-igor-6325060.jpg&fm=jpg" alt="" className="adminUpdateImg" />
+                            <label htmlFor="file">
+                                <Publish className="adminUpdateIcon"/>
+                            </label>
+                            <input type="file" id="file" className="file" style={{display:'none'}}/>
+                            </div>
+                            <button className="adminUpdateButn">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     )
 }

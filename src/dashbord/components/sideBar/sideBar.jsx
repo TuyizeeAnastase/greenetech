@@ -57,7 +57,7 @@ export default function SideBar() {
                             Subscribers
                         </li>
                     </Link>
-                        <Link to="/dashbord/admin">
+                        <Link to="/dashbord/admins">
                         <li className="sidebarlistItems">
                             <Equalizer className="sidebarIcon"/>
                               Admins

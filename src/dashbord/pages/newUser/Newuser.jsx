@@ -15,7 +15,7 @@ export default function Newuser() {
                     <input type="text" placeholder="john Smith" />
                 </div>
                 <div className="newUserItem">
-                    <label>Eamil</label>
+                    <label>Email</label>
                     <input type="email" placeholder="john@gmail.com" />
                 </div>
                 <div className="newUserItem">

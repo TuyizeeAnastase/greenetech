@@ -1,0 +1,50 @@
+.createAdmin{
+    flex:4;
+    padding: 20px;
+}
+.newAdminForm{
+    display: inline-block;
+}
+.newAdminItem{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.newAdminItem>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+.newAdminItem>input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.newAdminGender>input{
+    margin-top: 15px;
+}
+.newAdminGender>label{
+    margin: 10px;
+    font-size: 15px;
+    color: #555;
+}
+.newAdminSelect{
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+.newAdminBtn{
+    width: 200px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}

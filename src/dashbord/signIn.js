@@ -2,17 +2,11 @@ import React from 'react';
 import fb from '.././images/facebook.png';
 import twitter from '.././images/twitter.png';
 import instagram from '.././images/instagram.png';
-import { Link } from 'react-router-dom';  
 
-const Login = () => {
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
 
-        let email = e.target.elements.email?.value;
-        let password = e.target.elements.password?.value;
-
-        console.log(email, password);
-    };
+class Login extends React.Component{
+ 
+  render(){
     return ( 
       <div>
         <nav className='bg-green-700'>
@@ -35,14 +29,14 @@ const Login = () => {
                     Log in to your account 🔐
                 </h1>
 
-                <form onSubmit={handleFormSubmit}>
+                <form >
                     <div>
                         <label htmlFor='email'>Email</label>
                         <input
                             type='email'
                             className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
-                            id='email'
-                            placeholder='Your Email'
+                            id="email"
+                            placeholder="Enter email"
                         />
                     </div>
                     <div>
@@ -50,20 +44,18 @@ const Login = () => {
                         <input
                             type='password'
                             className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
-                            id='password'
-                            placeholder='Your Password'
+                            id="password"
+                            placeholder="Enter password"
                         />
+                        
                     </div>
 
                     <div className='flex justify-center items-center mt-6'>
-                       <Link to="/dashbord">
                        <button
                             className={`bg-green-700 py-2 px-4 text-sm text-white rounded border border-green focus:outline-none focus:border-green-dark`}
                         >
                             Login
                         </button>
-                         
-                       </Link>
                     </div>
                 </form>
             </div>
@@ -84,6 +76,7 @@ const Login = () => {
 
         </div>
     );
+  }
 };
 
 export default Login;

@@ -2,6 +2,7 @@ import React from 'react';
 import fb from '.././images/facebook.png';
 import twitter from '.././images/twitter.png';
 import instagram from '.././images/instagram.png';
+import { Link } from 'react-router-dom'
 
 
 class Login extends React.Component{
@@ -51,11 +52,13 @@ class Login extends React.Component{
                     </div>
 
                     <div className='flex justify-center items-center mt-6'>
+                      <Link to="/dashbord">
                        <button
                             className={`bg-green-700 py-2 px-4 text-sm text-white rounded border border-green focus:outline-none focus:border-green-dark`}
                         >
                             Login
                         </button>
+                        </Link>
                     </div>
                 </form>
             </div>

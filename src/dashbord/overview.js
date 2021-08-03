@@ -38,8 +38,8 @@ function Dashbord(){
                         <Route path="/dashbord/products/">
                            <Products/>
                         </Route>
-                        <Route path="/dashbord/product/:productId">
-                           <Product/>
+                        <Route path="/dashbord/product/:productId" component={Product}>
+                           
                         </Route>
                         <Route path="/dashbord/newProduct">
                            <NewProduct/>

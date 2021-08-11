@@ -36,7 +36,7 @@ border-radius: 10px;
 }
 .widgetLgBtn{
     padding: 5px 7px;
-    background-color: #008000;
+    background-color: #2C7857;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -52,7 +52,7 @@ border-radius: 10px;
     color: #111;
 }
 .widgetLgBtn.good{
-    background-color: #008000;
+    background-color: #2C7857;
 }
 @media(max-width:690px){
     .widgetL{

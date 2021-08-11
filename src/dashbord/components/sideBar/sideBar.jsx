@@ -1,6 +1,6 @@
 import React from 'react';
 import './sideBar.css';
-import { LineStyle, PermIdentity, DynamicFeed,ChatBubble,MonetizationOn,Equalizer,Storefront,MailOutline} from '@material-ui/icons';
+import { LineStyle, PermIdentity,Subscriptions,Storefront,MailOutline,SupervisorAccount} from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 
 export default function SideBar() {
@@ -33,16 +33,14 @@ export default function SideBar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Nofications</h3>
                     <ul className="sidebarList">
+                    <Link to="/dashbord/subscribers">
+                        <li className="sidebarlistItems">
+                            <Subscriptions className="sidebarIcon"/>
+                            Subscribe
+                        </li>
+                    </Link>    
                         <li className="sidebarlistItems">
                             <MailOutline className="sidebarIcon"/>
-                            Mail
-                        </li>
-                        <li className="sidebarlistItems ">
-                            <DynamicFeed className="sidebarIcon"/>
-                            feedback
-                        </li>
-                        <li className="sidebarlistItems">
-                            <ChatBubble className="sidebarIcon"/>
                             Messages
                         </li>
                     </ul>
@@ -51,18 +49,15 @@ export default function SideBar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                    <Link to="/dashbord/subscribers">
-                       <li className="sidebarlistItems ">
-                            <MonetizationOn className="sidebarIcon"/>
-                            Subscribers
-                        </li>
-                    </Link>
                         <Link to="/dashbord/admins">
                         <li className="sidebarlistItems">
-                            <Equalizer className="sidebarIcon"/>
+                            <SupervisorAccount className="sidebarIcon"/>
                               Admins
                         </li>
                         </Link>
+                        <li>
+                         <button className="logoutS">Logout</button>
+                        </li>
                     </ul>
                 </div>
             </div>

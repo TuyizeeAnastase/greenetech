@@ -6,7 +6,7 @@
     top: 50px;
 }
 .sidebarWrapper{
-    color: #008000;
+    color: #2C7857;
     padding: 20px;
 }
 .sidebarMenu{
@@ -14,7 +14,7 @@
 }
 .sidebarTitle{
     font-size: 23px;
-    color: #1e90ff;
+    color: #2C7857;
 }
 .sidebarList{
     list-style-type: none;
@@ -26,14 +26,30 @@
     border-radius: 10px;
 }
 .sidebarlistItems.active, .sidebarlistItems:hover{
-    background-color: #008000;
+    background-color: #2C7857;
     color: #fff;
 }
 .sidebarIcon{
     margin-right: 5px;
     font-size: 20px;
 }
-
+.logoutS{
+    color: #2C7857;
+    background-color: white;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 10%;
+    margin-top: 25px;
+    border-color: #2C7857;
+    cursor: pointer;
+    border: 2px solid #2C7857;
+    width: 100px;
+}
+.logoutS:hover{
+    background-color: #2C7857;
+    color: white;
+    border: 2px solid white;
+}
 
 
 

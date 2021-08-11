@@ -1,0 +1,60 @@
+
+.about{
+    background-color: rgb(12, 51, 30);
+    font-family: tahoma;
+    text-align: justify;
+    padding-top: 98px;
+    padding-bottom: 101px;
+}
+.fa-play{
+    font-size: 100px;
+}
+.about .p-first{
+    margin-bottom: 30px;
+}
+.about h2{
+    margin-bottom: 47px;
+    margin-top: 12px;
+    color: white;
+}
+.about .social-link-text{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+.col-3{
+    color: #d6c6d2;
+}
+.text-white{
+    color: white;
+}
+p{
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.btn-danger{
+    border-radius: 0;
+    padding: 10px 20px;
+    background-color: white;
+    color: green;
+}
+.btn-danger:hover{
+    background-color: white;
+    color: green;
+}

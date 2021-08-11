@@ -32,6 +32,7 @@ export default class NewProduct extends React.Component{
     }
     onSubmit(e){
         e.preventDefault()
+        
 
         const userObject={
             title:this.state.title,
@@ -39,7 +40,7 @@ export default class NewProduct extends React.Component{
             stock:this.state.stock,
             status:this.state.status
         };
-        axios.post('http://localhost:5000/api/v1/products/new',userObject)
+        axios.post('https://greenetech.herokuapp.com/api/v1/products/new',userObject)
              .then((res)=>{
                  console.log(res.data)
              }).catch((error)=>{

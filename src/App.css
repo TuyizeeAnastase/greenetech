@@ -41,19 +41,19 @@
   height: 2px;
   width: 60px;
   border: 0;
-  background: #34D399;
+  background: #2C7857;
 }
 .line2 hr{
   height: 2px;
   width: 60px;
   border: 0;
-  background: #123e91;
+  background: #2C7857;
 }
 .lineT hr{
   height: 2px;
   width: 60px;
   border: 0;
-  background: #123e91;
+  background: #2C7857;
 }
 .line3 hr{
   height: 2px;
@@ -65,13 +65,13 @@
   height: 2px;
   width: 30px;
   border: 0;
-  background: black;
+  background: white;
 }
 .fLine hr{
   height: 2px;
   width: 75%;
   border: 0;
-  background: black; 
+  background: white; 
 }
 .service{
   background-image: '../images/service.jpg';
@@ -88,7 +88,7 @@
 .navbar.sticky{
   height: 120px;
   padding: 2px 0;
-  background-color: #123e91;
+  background-color: #2C7857;
 }
 .navbar.sticky .menu a:hover{
   color: #e9ebee;

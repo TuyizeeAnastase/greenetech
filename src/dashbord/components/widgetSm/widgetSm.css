@@ -45,12 +45,12 @@ border-radius: 10px;
     border: none;
     border-radius: 10px;
     padding: 7px 10px;
-    background-color: #008000;
+    background-color: #2C7857;
     cursor: pointer;
 }
 .widgetSmBtn:hover{
     background-color: #fff;
-    color: #008000;
+    color: #2C7857;
 }
 .widgetSmIcon{
     font-size: 16px;

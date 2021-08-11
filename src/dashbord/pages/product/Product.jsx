@@ -43,7 +43,7 @@ export default class NewProduct extends React.Component{
             stock:this.state.stock,
             status:this.state.status
         };
-        axios.patch(`http://localhost:5000/api/v1/products/${id}`,userObject)
+        axios.patch(`https://greenetech.herokuapp.com/api/v1/products/${id}`,userObject)
              .then((res)=>{
                  console.log(res.data)
              }).catch((error)=>{

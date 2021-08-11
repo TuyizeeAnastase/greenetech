@@ -24,7 +24,7 @@ class  TopBar extends React.Component {
                         <Settings/>
                         </div>
                         <img src={profile} alt="profile" className="topAvatar"></img>
-                        <button >Logout</button>
+                        <button className="logout">Logout</button>
                     </div>
                 </div>
             </div>

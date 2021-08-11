@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './subscribers.css';
 import { DataGrid } from '@material-ui/data-grid';
-import { DeleteOutline } from '@material-ui/icons';
+import { Unsubscribe } from '@material-ui/icons';
 import { subscribers } from '../../../dummyData';
 
 export default function Subscribers() {
@@ -22,7 +22,7 @@ export default function Subscribers() {
                 renderCell:(params)=>{
                     return (
                         <>
-                        <DeleteOutline className="userListDelete" onClick={()=>handleDelete(params.row.id)}/>
+                        <Unsubscribe className="userListDelete" onClick={()=>handleDelete(params.row.id)}/>
                         </>
                     )
                 }

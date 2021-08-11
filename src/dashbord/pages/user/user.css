@@ -11,7 +11,7 @@
     width: 80px;
     border: none;
     padding: 5px;
-    background-color: green;
+    background-color: #2C7857;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -106,7 +106,7 @@
     border: none;
     width: 150px;
     height: 30px;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #2C7857;
 }
 .userUpdateRight{
     display: flex;
@@ -132,7 +132,7 @@
   border: none;
   padding: 5px;
   cursor: pointer;
-  background-color: green;
+  background-color: #2C7857;
   color: white;
   font-weight: 600;
 }

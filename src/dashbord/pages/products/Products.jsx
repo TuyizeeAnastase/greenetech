@@ -32,7 +32,7 @@ const Products=()=>{
   const [tableData,setTableData]=useState([]);
 
   const handleDelete=(id)=>{
-    axios.delete(`http://localhost:5000/api/v1/products/${id}`)
+    axios.delete(`https://greenetech.herokuapp.com/api/v1/products/${id}`)
     .then(res=>{
       console.log(res)
       console.log(res.data)
@@ -41,7 +41,7 @@ const Products=()=>{
   }
 
   useEffect(()=>{
-    fetch("http://localhost:5000/api/v1/products")
+    fetch("https://greenetech.herokuapp.com/api/v1/products")
      .then((res)=>res.json())
      .then((res)=>setTableData(res.data.products))
   });

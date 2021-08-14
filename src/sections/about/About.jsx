@@ -16,11 +16,10 @@ class About extends Component{
                   <div class="col-md-7 about-right">
                       <h2 class="color-3"><b>About Us</b></h2>
                       <p class="p-first text-white">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit temporibus aspernatur debitis corporis? Iste tempore incidunt reprehenderit, ab libero beatae suscipit nam corrupti, odio dolor at commodi praesentium quis.
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cum a repudiandae beatae rem accusantium facilis earum facere similique exercitationem.
+                      To promote and ensure the protection of the environment and sustainable management of natural resources through decentralized structures of governance and seek national position to emerging global issues with a view to enhancing the well-being of the Rwandan people.
                       </p>
                       <p class="text-white">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus accusantium harum consectetur dolor corporis recusandae dolore enim, in nihil aperiam.
+                      All sectors of the Rwandan Society value and undertake sound environmental management and rational use of natural resources in order to contribute to the national aspirations for sustainable development.
                       </p>
                       <h3 class="color-3 social-link-text">
                           <button class="btn btn-danger">Get Started</button>

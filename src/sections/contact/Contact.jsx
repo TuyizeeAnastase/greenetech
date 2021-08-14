@@ -1,8 +1,20 @@
 import React , {Component} from 'react';
 import './contact.css';
+import emailjs from 'emailjs-com';
 
 class Contact extends Component
 {
+    sendEmail=(event)=>{
+        event.preventDefault();
+    
+        emailjs.sendForm('service_4p9a7ts', 'template_dbdzxwq', event.target, 'user_S7KSqjkfaAoXCmCLJDblg')
+          .then((result) => {
+              alert('Message Sent')
+          }, (error) => {
+              alert('Message not Sent,We will get back to you shortly')
+          });
+          event.target.reset();
+    }
     render(){
         return(
             <div class="contact">
@@ -42,18 +54,22 @@ class Contact extends Component
                   </div>
               </div>
               <div className="contactForm">
-                  <form action="">
+                  <form action="" onSubmit={this.sendEmail}>
                       <h2>Send Message</h2>
                       <div className="inputBox">
-                          <input type="text" name="" required />
+                          <input type="text" name="name" required />
                           <span>Full Name</span>
                       </div>
                       <div className="inputBox">
-                          <input type="text" name="" required />
+                          <input type="email" name="email" required />
                           <span>Email</span>
                       </div>
                       <div className="inputBox">
-                          <textarea required></textarea>
+                          <input type="text" name="subject" required />
+                          <span>Subject</span>
+                      </div>
+                      <div className="inputBox">
+                          <textarea required name="message" type="text" required></textarea>
                           <span>Type your Message</span>
                       </div>
                       <div className="inputBox">

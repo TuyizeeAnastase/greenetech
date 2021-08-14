@@ -9,9 +9,9 @@ const Card=props=>{
             <img src={service} alt="" className="card-image-top"/>
          </div>
          <div className="card-body text-dark">
-           <h4 className="card-title" style={{color:'rgb(12, 51, 30)'}}>Card Title</h4>
+           <h4 className="card-title" style={{color:'rgb(12, 51, 30)'}}>Green vehicle system installation</h4>
            <p className="card-text text-secondary">
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis sequi possimus, eaque aut vero reprehenderit perferendis inventore, ex beatae quae quidem.
+             Taking your part contributing to vehicle emission reduction, we offer you a green vehicle system and get installed with comfort in your vehicle with trusted experts in the field
            </p>
            <a href="/#" className="btn btn-outline-success">
               Go Anywhere

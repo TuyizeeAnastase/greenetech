@@ -83,6 +83,40 @@ ul{
     outline: none;
     resize: none;
 }
+.form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(12, 51, 30);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
 /*responsive*/
 @media(max-width:767px) {
     .footer-col{

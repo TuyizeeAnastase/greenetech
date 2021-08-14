@@ -1,8 +1,20 @@
 import React,{Component} from 'react';
 import './footer.css'
-
+import emailjs from 'emailjs-com';
 
 class Footer extends Component{
+    sendSub(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_4p9a7ts', 'template_5hzv9as', e.target, 'user_S7KSqjkfaAoXCmCLJDblg')
+          .then((result) => {
+              alert('Thank for your subscrptions.')
+          }, (error) => {
+              alert('Subscription Fail')
+          });
+          e.target.reset();
+      }
+
     render(){
         return(
             <div className="footer">
@@ -20,6 +32,7 @@ class Footer extends Component{
                             <li><a href="/#">our services</a></li>
                             <li><a href="/#">our Works</a></li>
                             <li><a href="/#">contact Us</a></li>
+                            <li><a href="/login">admin Portal</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
@@ -34,7 +47,15 @@ class Footer extends Component{
                     </div>
                     <div className="footer-col">
                         <h4>subscribe Us</h4>
-                        <input type="text" />
+                        <form action="" onSubmit={this.sendSub} className="form">
+                            <div className="inputBox">
+                               <input type="email" required name="email" placeholder="Enter your email"/>
+                               {/* <span>Subject</span> */}
+                            </div>
+                            <div className="inputBox">
+                               <input type="submit" value="send"/>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

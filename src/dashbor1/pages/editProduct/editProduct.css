@@ -1,0 +1,84 @@
+.product{
+    flex: 4;
+    padding: 20px;
+    margin-top: 8rem;
+}
+.productTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.productAddBtn{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: #2C7857;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+.productTitle{
+    font-weight: 500;
+}
+.newProduct{
+   margin-top: -14px; 
+}
+.newProductTitle{
+    font-weight: 100;
+}
+.editProduct{
+    margin-top: 2rem;
+    margin-left: 18rem;
+    display: flex;
+}
+.editLEft{
+    margin-right: -4rem;
+}
+.productInfoBottom{
+    padding: 25px;
+    margin-left: -2rem;
+    background-color: seagreen;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #000;
+}
+.productInfoTop img{
+    height: 100px;
+    width: 100px;
+}
+.productInfoItem{
+    padding:5px;
+    width: 300px;
+    height: 50px;
+    margin-right: 45px;
+    text-align: center;
+    color: #000;
+}
+.productInfoKey{
+    margin-right: 1rem;
+    font-weight: 500;
+}
+.editRight{
+    margin-left: 4rem;
+    margin-top: 8rem;
+}
+.editProductItem{
+    padding: 3px;
+}
+.editProductItem label{
+    margin-right: 4rem;
+}
+.editProductItem input{
+    color: #000;
+}
+.editProductForm button{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: #2C7857;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}

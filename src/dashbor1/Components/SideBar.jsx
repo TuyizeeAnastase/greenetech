@@ -10,7 +10,7 @@ class SideBar extends Component{
             </div>
             <div className="sidebar-menu">
                 <ul>
-                    <li >
+                    <li>
                         <a href="/#" className="active"><span className="las la-igloo"></span>
                         <span>Dashbord</span></a>
                     </li>

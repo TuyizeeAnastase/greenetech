@@ -13,7 +13,8 @@
 .card{
     background: #fff;
     border-radius: 5px;
-    width: 90%;
+    width: 110%;
+    margin-left: -4px;
 }
 .card-header,
 .card-body{
@@ -44,7 +45,7 @@ thead td{
     font-weight: 700;
 }
 td{
-    padding: .5rem 1rem;
+    padding: .3rem 1rem;
     font-size: .9rem;
     color: #222;
 }

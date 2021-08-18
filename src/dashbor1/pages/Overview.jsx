@@ -3,6 +3,8 @@ import TopBar from '../Components/TopBar';
 import SideBar from '../Components/SideBar';
 import Home from './Home';
 import Products from './products/Products';
+import NewProduct from './newProduct/NewProduct';
+import EditProduct from './editProduct/EditProduct';
 import Users from './userList/UserList';
 import Chart from './charts/Chart';
 import { userData } from '../../dummyData';
@@ -28,6 +30,11 @@ function Overview(){
                   <Route path="/dashbord/charts">
                      <Chart data={userData} title="Emission Analytics" grid dataKey="Active User"/>
                   </Route>
+                  <Route path="/dashbord/newProduct" component={NewProduct}> 
+                  </Route>
+                  <Route path="/dashbord/product/:productId" component={EditProduct}>
+                  </Route>
+
               </Switch>
           </div>
         </Router>

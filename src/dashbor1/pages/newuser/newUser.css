@@ -1,0 +1,63 @@
+.newUser{
+    flex: 4;
+    margin-top: 1px;
+}
+.newUSerTitle{
+    margin-left: 45rem;
+}
+.newUserForm{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center; 
+}
+.newUserItem{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -12px;
+    margin-left: 25rem;
+}
+.newUserItem label{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: gray;
+}
+.newUserItem input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: #000;
+}
+.newUserUpload{
+    border:none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.newUserUpload input{
+    cursor: pointer;
+}
+.newUserUpload label{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: gray;
+}
+.newUserSelect{
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+}
+.newUserBtn{
+    width: 200px;
+    border: none;
+    background-color: #0F331E;
+    color: #fff;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20rem;
+}

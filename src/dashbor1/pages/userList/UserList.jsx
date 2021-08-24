@@ -19,18 +19,18 @@ const Customers=()=>{
     }
 
     useEffect(()=>{
-      fetch('https://greenetech.herokuapp.com/api/v1/users/')
+      fetch('https://greenetech.herokuapp.com/api/v1/users')
         .then((res)=>res.json())
-        .then((res)=>setTableData(res.data.users))
+        .then((res)=>setTableData(res.data.Clients))
     });
         return (
-          <div className="products">
-                        <div className="card">
-                            <div className="card-header">
+          <div className="customers">
+                        <div className="customersCard">
+                            <div className="customersCard-header">
                                 <h3>All Users</h3>
-                                <Link to="/dashbord/newProduct"><button>Add New User</button></Link>
+                                <Link to="/dashbord/newUser"><button>Add New User</button></Link>
                             </div>
-                            <div className="card-body">
+                            <div className="customersCard-body">
                                 <div className="table-responsive">
                                 <table >
                                     <thead>

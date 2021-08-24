@@ -6,6 +6,7 @@ import Products from './products/Products';
 import NewProduct from './newProduct/NewProduct';
 import EditProduct from './editProduct/EditProduct';
 import Users from './userList/UserList';
+import NewUser from './newuser/NewUser';
 import Chart from './charts/Chart';
 import { userData } from '../../dummyData';
 
@@ -34,7 +35,8 @@ function Overview(){
                   </Route>
                   <Route path="/dashbord/product/:productId" component={EditProduct}>
                   </Route>
-
+                  <Route path="/dashbord/newUser" component={NewUser}>
+                  </Route>
               </Switch>
           </div>
         </Router>

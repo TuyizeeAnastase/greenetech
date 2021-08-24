@@ -1,8 +1,10 @@
 import React,{Component} from 'react';
+import { useState } from 'react';
 import './style.css';
+import { NavLink } from 'react-router-dom';
 
-class SideBar extends Component{
-    render(){
+function   SideBar (){
+
         return(
             <div className="sidebar">
             <div className="sidebar-brand">
@@ -11,39 +13,38 @@ class SideBar extends Component{
             <div className="sidebar-menu">
                 <ul>
                     <li>
-                        <a href="/#" className="active"><span className="las la-igloo"></span>
-                        <span>Dashbord</span></a>
+                        <NavLink exact to="/dashbord" activeClassName="active"><span className="las la-igloo"></span>
+                        <span>Dashbord</span></NavLink>
+                    </li>
+                    <li >
+                        <NavLink to="/dashbord/users" activeClassName="active"><span className="las la-users"></span>
+                        <span>Customers</span></NavLink>
                     </li>
                     <li>
-                        <a href="/dashbord/users"><span className="las la-users"></span>
-                        <span>Customers</span></a>
+                        <NavLink to="/dashbord/products/" activeClassName="active"><span className="las la-list"></span>
+                        <span>Products</span></NavLink>
                     </li>
                     <li>
-                        <a href="/dashbord/products/"><span className="las la-list"></span>
-                        <span>Products</span></a>
+                        <NavLink to="/dashbord/charts" activeClassName="active"><span className="fa fa-line-chart"></span>
+                        <span>Charts</span></NavLink>
                     </li>
                     <li>
-                        <a href="/dashbord/charts"><span className="las la-user-circle"></span>
-                        <span>Charts</span></a>
+                        <NavLink to="/message" activeClassName="active"><span className="fa fa-commenting-o"></span>
+                        <span>Messages</span></NavLink>
                     </li>
                     <li>
-                        <a href="/#"><span className="las la-list"></span>
-                        <span>Messages</span></a>
+                        <NavLink to="/subscribers" activeClassName="active"><span className="fa fa-newspaper-o"></span>
+                        <span>Subscribers</span></NavLink>
                     </li>
                     <li>
-                        <a href="/#"><span className="las la-receipt"></span>
-                        <span>Subscribers</span></a>
-                    </li>
-                    <li>
-                        <a href="/#"><span className="las la-user-circle"></span>
-                        <span>Account</span></a>
+                        <NavLink to="/account" activeClassName="active"><span className="las la-user-circle"></span>
+                        <span>Account</span></NavLink>
                     </li>
                 </ul>
             </div>
         </div>
         )
     }
-}
 
 export default SideBar;
 

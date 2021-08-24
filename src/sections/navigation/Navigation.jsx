@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import body from './bodyG.png';
 import './header.css';
+import logo from '../../images/logo1.png';
 
 class Header extends Component
 {
@@ -10,15 +11,17 @@ class Header extends Component
           <div>
               <nav class="fixed-nav-bar">
                 <div id="menu" class="menu">
-                    <a class="sitename" href="/#">GreenTech</a>
+                    <a class="sitename" style={{textDecoration:'none'}} href="/#">
+                        <img src={logo} alt="" style={{height:'10rem',width:'13rem'}} />
+                    </a>
                     <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
                     <ul class="menu-items">
-                       <li><a href="/#">Home</a></li>
-                       <li><a href="/#about">About</a></li>
-                       <li><a href="/#contact">Contact</a></li>
-                      <li><a href="/#services">services</a></li>
-                      <li><a href="/#works">Works</a></li>
-                      <li><a href="/#team">Team</a></li>
+                       <li ><a href="/#" >Home</a></li>
+                       <li ><a href="/#about" >About</a></li>
+                       <li ><a href="/#contact" >Contact</a></li>
+                      <li ><a href="/#services" >services</a></li>
+                      <li ><a href="/#works" >Works</a></li>
+                      <li ><a href="/#team" >Team</a></li>
                     </ul>
                 </div>
             </nav>

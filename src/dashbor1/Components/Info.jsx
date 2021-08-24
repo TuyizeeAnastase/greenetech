@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import './style.css';
 
 class Info extends Component{
+    
     render(){
         return(
             <div className="cards">

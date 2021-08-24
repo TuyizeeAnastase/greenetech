@@ -1,16 +1,24 @@
 .body {
     background: #0F331E;
     font-family: 'Roboto', sans-serif;
-    height: 100%;
+    height: 150%;
+}
+.container {
+    height:full;
 }
 
 .login-box {
-    margin-top: 75px;
+    margin-top: 30px;
+    width: 24rem;
     height: auto;
     background: white;
     text-align: center;
     border-radius: .5rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.error{
+    color: red;
+    margin-bottom: 10px;
 }
 
 .login-key {
@@ -37,7 +45,7 @@
     text-align: left;
 }
 
-input[type=text] {
+.form-control {
     background-color: #fff;
     border: none;
     border-bottom: 2px solid #0DB8DE;
@@ -45,23 +53,11 @@ input[type=text] {
     border-radius: 0px;
     font-weight: bold;
     outline: 0;
-    margin-bottom: 20px;
     padding-left: 0px;
+    margin-bottom: 20px;
     color: #ECF0F5;
 }
 
-input[type=password] {
-    background-color: #fff;
-    border: none;
-    border-bottom: 2px solid #0DB8DE;
-    border-top: 0px;
-    border-radius: 0px;
-    font-weight: bold;
-    outline: 0;
-    padding-left: 0px;
-    margin-bottom: 20px;
-    color: #ECF0F5;
-}
 
 .form-group {
     margin-bottom: 40px;
@@ -74,7 +70,7 @@ input[type=password] {
     box-shadow: none;
     border-bottom: 2px solid #0DB8DE;
     outline: 0;
-    background-color: gray;
+    background-color: rgb(224, 221, 221);
     color: #000;
 }
 

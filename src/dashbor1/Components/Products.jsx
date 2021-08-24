@@ -2,10 +2,19 @@ import React,{Component} from 'react';
 import './style.css';
 import { DeleteOutline } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
-class Products extends Component{
-    render(){
+const Products =()=>{
+    const [ tableData,setTableData ]=useState([]);
+    useEffect(()=>{
+        fetch('https://greenetech.herokuapp.com/api/v1/products')
+        .then((res)=>res.json())
+        .then((res)=>setTableData(res.data.products))
+    });
+    console.log(tableData);
         return(
             <div className="product">
                         <div className="card">
@@ -26,78 +35,20 @@ class Products extends Component{
                                         </tr>
                                     </thead>
                                     <tBody>
-                                        <tr>
-                                            <td>Green Vehicle</td>
-                                            <td>67000rwf</td>
-                                            <td>56</td>
-                                            <td><span className="status purple">wonning</span></td>
+                                        {tableData.map((data,index)=>(
+                                            <tr>
+                                            <td>{data.title}</td>
+                                            <td>{data.price}</td>
+                                            <td>{data.stock}</td>
+                                            <td><span className="status purple">{data.status}</span></td>
                                             <td>
                                                 <div style={{display:'flex'}}>
                                                    <button style={{marginRight:'4px',backgroundColor:'#0F331E',color:'white',borderRadius:'25%',width:'40px'}}>Edit</button>
                                                    <DeleteOutline/>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td>egg Incubator</td>
-                                            <td>50000rwf</td>
-                                            <td>56</td>
-                                            <td><span className="status pink">Active</span></td>
-                                            <td>
-                                                <div style={{display:'flex'}}>
-                                                   <button style={{marginRight:'4px',backgroundColor:'#0F331E',color:'white',borderRadius:'25%',width:'40px'}}>Edit</button>
-                                                   <DeleteOutline/>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Green Vehicle</td>
-                                            <td>67000rwf</td>
-                                            <td>56</td>
-                                            <td><span className="status orange">Active</span></td>
-                                            <td>
-                                                <div style={{display:'flex'}}>
-                                                   <button style={{marginRight:'4px',backgroundColor:'#0F331E',color:'white',borderRadius:'25%',width:'40px'}}>Edit</button>
-                                                   <DeleteOutline/>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Green Vehicle</td>
-                                            <td>67000rwf</td>
-                                            <td>56</td>
-                                            <td><span className="status orange">Inactive</span></td>
-                                            <td>
-                                                <div style={{display:'flex'}}>
-                                                   <button style={{marginRight:'4px',backgroundColor:'#0F331E',color:'white',borderRadius:'25%',width:'40px'}}>Edit</button>
-                                                   <DeleteOutline/>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Green Vehicle</td>
-                                            <td>67000rwf</td>
-                                            <td>56</td>
-                                            <td><span className="status orange">Active</span></td>
-                                            <td>
-                                                <div style={{display:'flex'}}>
-                                                   <button style={{marginRight:'4px',backgroundColor:'#0F331E',color:'white',borderRadius:'25%',width:'40px'}}>Edit</button>
-                                                   <DeleteOutline/>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Green Vehicle</td>
-                                            <td>67000rwf</td>
-                                            <td>56</td>
-                                            <td><span className="status orange">Inactive</span></td>
-                                            <td>
-                                                <div style={{display:'flex'}}>
-                                                   <button style={{marginRight:'4px',backgroundColor:'#0F331E',color:'white',borderRadius:'25%',width:'40px'}}>Edit</button>
-                                                   <DeleteOutline/>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                           </tr>
+                                          ))}
                                     </tBody>
                                 </table>
                                 </div>
@@ -106,6 +57,5 @@ class Products extends Component{
                     </div>
         )
     }
-}
 
 export default Products;

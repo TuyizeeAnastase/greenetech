@@ -20,7 +20,7 @@ class Contact extends Component
             <div class="contact">
             <div class="content">
                <h2>Contact Us</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perspiciatis inventore facilis suscipit maiores deserunt dicta vero ipsum amet provident est fugit soluta odio rerum, debitis optio. Excepturi, vitae molestiae.</p>
+               <p>Want to get in Touch ? We'd love to hear from you. Her is how you can reach us</p>
             </div>
             <div class="container">
               <div className="contactInfo">

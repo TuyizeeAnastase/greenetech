@@ -22,7 +22,7 @@ class Footer extends Component{
                 <div className="footer-col">
                         <h4>Company</h4>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia esse soluta totam enim perspiciatis dolore quas laborum ipsam tenetur unde?
+                        Your Technology and innovations-oriented partner who alters the process of knowledge transfer to achieve successful technological innovation.
                         </p>
                     </div>
                     <div className="footer-col">

@@ -20,6 +20,7 @@
     "firebase": "^8.8.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
+    "qs": "^6.10.1",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.3",
     "react-copyright": "0.0.1",

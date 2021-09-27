@@ -1,14 +1,12 @@
-import React,{Component} from 'react';
-import { useState } from 'react';
+import React from 'react';
 import './style.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 function   SideBar (){
-
         return(
             <div className="sidebar">
             <div className="sidebar-brand">
-                <h2><span className="lab la-accusoft"></span>GreeneTech</h2>
+                <Link  style={{textDecoration:'none',color:'white'}}><h2><span className="lab la-accusoft" style={{color:'white'}}></span>GreeneTech</h2></Link>
             </div>
             <div className="sidebar-menu">
                 <ul>
@@ -37,7 +35,7 @@ function   SideBar (){
                         <span>Subscribers</span></NavLink>
                     </li>
                     <li>
-                        <NavLink to="/account" activeClassName="active"><span className="las la-user-circle"></span>
+                        <NavLink to="/dashbord/account" activeClassName="active"><span className="las la-user-circle"></span>
                         <span>Account</span></NavLink>
                     </li>
                 </ul>

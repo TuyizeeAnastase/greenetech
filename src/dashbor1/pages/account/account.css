@@ -1,0 +1,59 @@
+.newAccount{
+    flex: 4;
+    margin-left: 20rem;
+    margin-top: 1px;
+}
+.newAccountForm{
+    margin-top: -5px; 
+}
+.newAccountItem{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20rem;
+}
+.newAccountItem>label{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: gray;
+}
+.newAccountItem>input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: #000;
+}
+.newAccountUpload{
+    border:none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.newAccountUpload>input{
+    cursor: pointer;
+}
+.newAccountUpload>label{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: gray;
+}
+.newAccountSelect{
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+}
+.newAccountBtn{
+    width: 200px;
+    border: none;
+    background-color: #0F331E;
+    color: #fff;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20rem;
+}

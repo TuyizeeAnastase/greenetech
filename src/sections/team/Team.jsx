@@ -2,10 +2,10 @@ import React,{Component} from 'react';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import './team.css'
-import img1 from './profile.jpg';
 import lawyer from '../../images/lawyer.jpeg';
 import dev from '../../images/devs.jpg'
 import finance from '../../images/finance.jpeg';
+import profile from '../../images/profile.jpeg';
 
 class Team extends Component
 {
@@ -17,14 +17,14 @@ class Team extends Component
                   <div class="row">
                       <div class="col-md-3 profile text-center">
                           <div class="img-box">
-                              <img src={img1} alt="" style={{height:'17rem',width:'15rem'}} class="img-responsive"/>
+                              <img src={profile} alt="" style={{height:'17rem',width:'15rem'}} class="img-responsive"/>
                               <ul>
                               <a href="/#" ><li><i class="fa fa-facebook" style={{position:'absolute',marginLeft:'-6px'}} ></i></li></a>
                                <a href="/#"><li><i class="fa fa-twitter" style={{position:'absolute',marginLeft:'-6px'}}></i></li></a> 
                                <a href="/#"><li><i class="fa fa-linkedin" style={{position:'absolute',marginLeft:'-6px'}}></i></li></a>   
                               </ul>
                           </div>
-                          <h2>Emmanuelle Tuyizere</h2>
+                          <h2>Emmanuel TUYIZERE</h2>
                           <h3>Founder / CEO</h3>
                       </div>
                       <div class="col-md-3 profile text-center">

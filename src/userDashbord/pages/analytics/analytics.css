@@ -1,0 +1,15 @@
+.chart{
+    padding: 20px;
+    margin-top: 10rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+.chartTitle{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+@media(max-width:690px){
+    .chart{
+        width: 75%;
+    }
+}

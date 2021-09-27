@@ -1,5 +1,7 @@
 import React , {Component} from 'react'
-import service from '../../images/service.jpg'
+import service from '../../images/service.jpg';
+import green from '../../images/Capture.JPG';
+import egg from '../../images/egg.jpeg';
 
 class Cards extends Component
 {
@@ -12,7 +14,7 @@ class Cards extends Component
                  <div className="col-md-4">
                  <div className="card text-center">
          <div className="overflow">
-            <img src={service} alt="" className="card-image-top"/>
+            <img src={green} alt="" className="card-image-top"/>
          </div>
          <div className="card-body text-dark">
            <h4 className="card-title" style={{color:'rgb(12, 51, 30)'}}>Green vehicle system installation</h4>
@@ -44,7 +46,7 @@ class Cards extends Component
                  <div className="col-md-4">
                  <div className="card text-center">
          <div className="overflow">
-            <img src={service} alt="" className="card-image-top"/>
+            <img src={egg} style={{height:'18rem',width:'100rem'}} alt="" className="card-image-top"/>
          </div>
          <div className="card-body text-dark">
            <h4 className="card-title" style={{color:'rgb(12, 51, 30)'}}>Adaptive egg incubator</h4>

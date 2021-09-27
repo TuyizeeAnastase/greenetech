@@ -2,8 +2,29 @@ import React,{Component} from 'react';
 import './style.css';
 
 class Info extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            data:{}
+        }
+    }
     
+    componentWillUnmount(){
+        fetch('https://greenetech.herokuapp.com/api/v1/products/')
+        .then(res=>res.json())
+        .then(res=>{
+            this.setState({
+                ...this.state,
+                data:res.data.product
+            })
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+
     render(){
+        console.log(this.state)
         return(
             <div className="cards">
                     <div className="card-single">

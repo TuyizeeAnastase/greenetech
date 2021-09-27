@@ -69,7 +69,7 @@ class Contact extends Component
                           <span>Subject</span>
                       </div>
                       <div className="inputBox">
-                          <textarea required name="message" type="text" required></textarea>
+                          <textarea required name="message" type="text"></textarea>
                           <span>Type your Message</span>
                       </div>
                       <div className="inputBox">

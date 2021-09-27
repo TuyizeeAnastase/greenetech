@@ -76,7 +76,8 @@ class NewUser extends React.Component{
         return(
            <div className="newUser">
                 <h1 className="newUserTitle" style={{marginLeft:'25rem',marginTop:'6rem',fontSize:'20px',fontWeight:'300'}}>New User</h1>
-                <form action="" onSubmit={this.onSubmit} className="newUserForm">
+                <form action="" onSubmit={this.onSubmit} >
+                    <div className="newUserForm">
                     <div className="leftForm">
                     <div className="newUserUpload" style={{marginLeft:'25rem',marginBottom:'2rem'}}>
                         <label>image</label>
@@ -117,7 +118,7 @@ class NewUser extends React.Component{
                         <input type="text" value={this.state.amount} onChange={this.onChangeAmount} placeholder="Enter Amount" />
                     </div>
                     </div>
-                    
+                    </div>
                     <button type="submit" className="newUserBtn">Create</button>
                 </form>
            </div>

@@ -1,8 +1,7 @@
-import React,{Component} from 'react';
+import React from 'react';
 import './style.css';
 import profile from './profile.jpg';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
 

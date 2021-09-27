@@ -109,11 +109,14 @@
 }
 .user-wrapper img{
     border-radius: 50%;
-    margin-right: 7rem;
+    margin-right: 27rem;
 }
 .user h4{
     font-weight: 100;
     font-size: 13px;
+}
+.user input{
+    margin-right: 4rem;
 }
 .main{
     margin-top: 90px;

@@ -3,8 +3,9 @@
     font-family: 'Roboto', sans-serif;
     height: 150%;
 }
-.container {
-    height:full;
+.container-Login {
+    height:42rem;
+    margin-left: 14rem;
 }
 
 .login-box {
@@ -16,6 +17,7 @@
     border-radius: .5rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
 .error{
     color: red;
     margin-bottom: 10px;
@@ -55,7 +57,7 @@
     outline: 0;
     padding-left: 0px;
     margin-bottom: 20px;
-    color: #ECF0F5;
+    color: #000;
 }
 
 

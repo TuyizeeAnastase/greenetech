@@ -17,11 +17,15 @@
     "bootstrap": "^5.1.0",
     "chart": "^0.1.2",
     "emailjs-com": "^3.2.0",
+    "express": "^4.17.1",
     "firebase": "^8.8.0",
     "font-awesome": "^4.7.0",
+    "google-map-react": "^2.1.10",
     "jquery": "^3.6.0",
     "qs": "^6.10.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.3",
+    "react-chartist": "^0.14.4",
     "react-chartjs-2": "^3.0.3",
     "react-copyright": "0.0.1",
     "react-dom": "^17.0.2",
@@ -36,7 +40,7 @@
   },
   "scripts": {
     "dev": "craco  start",
-    "start": "craco index.js",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
@@ -69,6 +73,6 @@
     "postcss": "^7.0.36",
     "react-app-rewired": "^2.1.8",
     "sass": "^1.37.5",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
   }
 }

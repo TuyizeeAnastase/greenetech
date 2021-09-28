@@ -16,7 +16,6 @@ const User = () => {
   const email = localStorage.getItem("email");
   return (
     <div style={{marginTop:'16rem'}}>
-    <>
       <Container fluid>
         <Row>
           <Col md="8">
@@ -133,7 +132,6 @@ const User = () => {
           </Col>
         </Row>
       </Container>
-    </>
     </div>
   );
 };

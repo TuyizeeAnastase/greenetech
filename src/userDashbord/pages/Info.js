@@ -12,7 +12,6 @@ import {
 function TableList() {
   return (
       <div style={{marginTop:'16rem'}}>
-    <>
       <Container fluid>
         <Row>
           <Col md="12">
@@ -76,7 +75,6 @@ function TableList() {
         </Row>
         <h1>Actions</h1>
       </Container>
-    </>
     </div>
   );
 }
